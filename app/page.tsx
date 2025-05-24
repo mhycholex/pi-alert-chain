@@ -6,7 +6,11 @@ import { useState } from 'react';
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);export default function Page() {
+);
+
+// Trigger redeploy
+
+export default function Page() {
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState('');
 
